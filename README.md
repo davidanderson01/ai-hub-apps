@@ -1,12 +1,13 @@
-[![Qualcomm® AI Hub Apps](https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/quic-logo.jpg)](https://aihub.qualcomm.com)
-
 # Qualcomm® AI Hub Apps
+
+[![Qualcomm® AI Hub Apps](https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/quic-logo.jpg)](https://aihub.qualcomm.com)
 
 The Qualcomm® AI Hub Apps are a collection of sample apps and tutorials to help deploy machine learning models on Qualcomm® devices.
 
 Each app is designed to work with one or more models from [Qualcomm® AI Hub Models](https://aihub.qualcomm.com/).
 
 With this repository, you can...
+
 * Explore apps optimized for on-device deployment of various machine learning tasks.
 * View open-source app recipes for running [Qualcomm® AI Hub Models](https://aihub.qualcomm.com/) on local devices.
 * Find tutorials for end-to-end workflows
@@ -14,18 +15,22 @@ With this repository, you can...
 ## Overview
 
 ### Supported runtimes
+
 * [TensorFlow Lite](https://www.tensorflow.org/lite)
 * [ONNX](https://onnxruntime.ai/)
 * Genie SDK (Generative AI runtime on top of [Qualcomm® AI Engine Direct SDK](https://www.qualcomm.com/developer/software/qualcomm-ai-engine-direct-sdk))
 
 ### Supported Deployment Targets
+
 * Android 11 Red Velvet Cake & Newer, API v30+
 * Windows 11
 
 ### Supported compute units
+
 * CPU, GPU, NPU (includes [hexagon HTP](https://developer.qualcomm.com/hardware/qualcomm-innovators-development-kit/ai-resources-overview/ai-hardware-cores-accelerators))
 
 ### Chipsets supported for NPU Acceleration
+
 * [Snapdragon 8 Elite](https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-elite-mobile-platform)
 * [Snapdragon 8 Gen 3](https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-gen-3-mobile-platform)
 * [Snapdragon 8 Gen 2](https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-gen-2-mobile-platform)
@@ -34,6 +39,7 @@ With this repository, you can...
 * ... and all other [Snapdragon® chipsets supported by the QAIRT SDK](https://docs.qualcomm.com/bundle/publicresource/topics/80-63442-50/overview.html#supported-snapdragon-devices)
 
 _Weight and activation type required for NPU Acceleration:_
+
 * Floating Point: FP16 (All Snapdragon® chipsets with Hexagon® Architecture v69 or newer)
 * Integer : INT8 (All Snapdragon® chipsets)
 
@@ -41,7 +47,7 @@ __NOTE: These apps will run without NPU acceleration on non-Snapdragon® chipset
 
 ## Getting Started with Apps
 
-1. Search for your desired OS & app in [this folder](apps), or in the [app directory](#app-directory) at the bottom of this file.
+1. Search for your desired OS & app in [this folder](apps), or in the [Android App Directory](#android-app-directory) or [Windows App Directory](#windows-app-directory) at the bottom of this file.
 
 2. The README of the selected app will contain build & installation instructions.
 
@@ -50,10 +56,10 @@ __NOTE: These apps will run without NPU acceleration on non-Snapdragon® chipset
 | Task | Language | Inference API | Special Tags |
 | -- | -- | -- | -- |
 | [ChatApp](apps/android/ChatApp) | Java/C++ | Genie SDK | LLM, GenAI |
-| [Image Classification](apps/android/ImageClassification) | Java | TensorFlow Lite |
+| [Image Classification](apps/android/ImageClassification) | Java | TensorFlow Lite |  |
 | [Semantic Segmentation](apps/android/SemanticSegmentation) |  Java | TensorFlow Lite | OpenCV, Live Camera Feed |
-| [Super Resolution](apps/android/SuperResolution) | Java | TensorFlow Lite |
-| [WhisperKit (Speech to Text)](https://github.com/argmaxinc/WhisperKitAndroid) | Various | TensorFlow Lite |
+| [Super Resolution](apps/android/SuperResolution) | Java | TensorFlow Lite |  |
+| [WhisperKit (Speech to Text)](https://github.com/argmaxinc/WhisperKitAndroid) | Various | TensorFlow Lite |  |
 
 ## _Windows_ App Directory
 
@@ -63,7 +69,7 @@ __NOTE: These apps will run without NPU acceleration on non-Snapdragon® chipset
 | [Image Classification](apps/windows/cpp/Classification) | C++ | ONNX | OpenCV |
 | [Object Detection](apps/windows/cpp/ObjectDetection) | C++ | ONNX | OpenCV |
 | [Super Resolution](apps/windows/cpp/SuperResolution) | C++ | ONNX | OpenCV |
-| [Whisper Speech-to-Text](apps/windows/python/Whisper) | Python | ONNX |
+| [Whisper Speech-to-Text](apps/windows/python/Whisper) | Python | ONNX |  |
 
 ## _Tutorials_ Directory
 
