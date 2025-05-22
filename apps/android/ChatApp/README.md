@@ -172,7 +172,7 @@ cd <ai-hub-apps-repo-root>/apps/android/ChatApp/
 
 The ChatApp supports custom device configurations for Qualcomm Snapdragon 8 Elite and similar SoCs. The configuration file is located at:
 
-```json
+```text
 apps/android/ChatApp/src/main/assets/htp_config/qualcomm-snapdragon-8-elite.json
 ```
 
