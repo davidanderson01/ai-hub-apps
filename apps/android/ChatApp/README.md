@@ -1,6 +1,6 @@
-[![Qualcomm® AI Hub Apps](https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/quic-logo.jpg)](https://aihub.qualcomm.com)
-
 # Sample Chat App
+
+[![Qualcomm® AI Hub Apps][qualcommLogo]](https://aihub.qualcomm.com)
 
 Chat application for Android on Snapdragon® with [Llama 3.2 3B](https://aihub.qualcomm.com/compute/models/llama_v3_2_3b_instruct) using Genie SDK.
 
@@ -30,7 +30,7 @@ We are looking forward for community contributions for trying out this app on di
 
 ## Demo
 
-https://github.com/user-attachments/assets/7b23c632-cc4e-48ed-b1df-ea98ec0f51b7
+<https://github.com/user-attachments/assets/7b23c632-cc4e-48ed-b1df-ea98ec0f51b7>
 
 ## Requirements
 
@@ -49,6 +49,7 @@ https://github.com/user-attachments/assets/7b23c632-cc4e-48ed-b1df-ea98ec0f51b7
     ```bash
     pip install qai-hub
     pip install "qai-hub-models[llama-v3-2-3b-instruct]"
+    ```text
     ```
 
 4. Download and extract QAIRT SDK compatible with sample app:
@@ -127,7 +128,6 @@ cd <ai-hub-apps-repo-root>/apps/android/ChatApp/
     # here {build_type} can be either `release` or `debug`
     ```
 
-
 7. Run on Android device
 
     We recommend using [QDC](https://qdc.qualcomm.com/) to run this app.
@@ -168,6 +168,32 @@ cd <ai-hub-apps-repo-root>/apps/android/ChatApp/
 
     4. Use browser UI instance to open and run ChatApp
 
+## Device Configuration
+
+The ChatApp supports custom device configurations for Qualcomm Snapdragon 8 Elite and similar SoCs. The configuration file is located at:
+
+```json
+apps/android/ChatApp/src/main/assets/htp_config/qualcomm-snapdragon-8-elite.json
+```
+
+**Example Identifiers:**
+
+- `soc_model`: 69
+- `dsp_arch`: v79
+- `core_id`: 0
+- `perf_profile`: burst
+- `rpc_control_latency`: 100
+- `mem_type`: shared_buffer
+- `share_resources`: true
+
+**How to use:**
+
+1. Ensure the JSON config is present at the path above.
+2. The app will automatically load this configuration at runtime.
+3. To update device identifiers, edit the JSON file as needed.
+
+If you need to add more devices or change identifiers, update the JSON accordingly.
+
 ## License
 
 This app is released under the [BSD-3 License](../../../LICENSE) found at the root of this repository.
@@ -175,3 +201,5 @@ This app is released under the [BSD-3 License](../../../LICENSE) found at the ro
 All models from [AI Hub Models](https://github.com/quic/ai-hub-models) are released under separate license(s). Refer to the [AI Hub Models repository](https://github.com/quic/ai-hub-models) for details on each model.
 
 The QNN SDK dependency is also released under a separate license. Please refer to the LICENSE file downloaded with the SDK for details.
+
+[qualcommLogo]: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/quic-logo.jpg
